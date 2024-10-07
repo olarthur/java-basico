@@ -1,7 +1,7 @@
 import java.awt.Dimension;
 import java.awt.Toolkit;
 
-public class QuartoPrograma {
+public class ResolucaoTela {
     public static void main(String[] args) throws Exception {
         Toolkit toolkit = Toolkit.getDefaultToolkit();
         Dimension resolucao = toolkit.getScreenSize();
