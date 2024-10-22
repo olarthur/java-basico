@@ -8,9 +8,24 @@ public class OperadoresAritmeticos {
         System.out.println("A media e igual a " + m);
         */
 
+        /* 
+         * int numero = 5;
+         * int valor = 5 + numero++;
+         * System.out.println(valor);
+         * 
+         * resulta em 10 pois o "++" está após o número
+         */
 
-        int numero = 5;
-        int valor = 5 + numero++;
+        /* 
+         * int numero = 5;
+         * int valor = 5 + ++numero;
+         * System.out.println(valor);
+         * 
+         * resulta em 11 pois o incremento está pré número
+         */
+        
+         int numero = 5;
+        int valor = 5 + ++numero;
         System.out.println(valor);
     }
 }
