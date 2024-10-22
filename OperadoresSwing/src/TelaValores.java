@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class DivisaoFrame extends JFrame {
+public class TelaValores extends JFrame {
 
     private JLabel labelNumerador;
     private JLabel labelDenominador;
@@ -14,7 +14,7 @@ public class DivisaoFrame extends JFrame {
     private JLabel resultadoDivisao;
     private JLabel resultadoResto;
 
-    public DivisaoFrame() {
+    public TelaValores() {
         super("Divisão com Resto");
 
         setLayout(null);
@@ -77,6 +77,6 @@ public class DivisaoFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        new DivisaoFrame();
+        new TelaValores();
     }
 }
