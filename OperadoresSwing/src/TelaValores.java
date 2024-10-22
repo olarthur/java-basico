@@ -57,8 +57,8 @@ public class TelaValores extends JFrame {
                     int numerador = Integer.parseInt(campoNumerador.getText());
                     int denominador = Integer.parseInt(campoDenominador.getText());
 
-                    int divisao = numerador / denominador;
-                    int resto = numerador % denominador;
+                    float divisao = numerador / denominador;
+                    float resto = numerador % denominador;
 
                     resultadoDivisao.setText(String.valueOf(divisao));
                     resultadoResto.setText(String.valueOf(resto));
