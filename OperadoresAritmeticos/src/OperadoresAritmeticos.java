@@ -1,6 +1,6 @@
 public class OperadoresAritmeticos {
     public static void main(String[] args) throws Exception {
-        
+
         /* 
         int n1 = 3;
         int n2 = 5;
@@ -10,7 +10,7 @@ public class OperadoresAritmeticos {
 
 
         int numero = 5;
-        numero++;
-        System.out.println(numero);
+        int valor = 5 + numero++;
+        System.out.println(valor);
     }
 }
