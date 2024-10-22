@@ -24,8 +24,11 @@ public class OperadoresAritmeticos {
          * resulta em 11 pois o incremento está pré número
          */
         
-         int numero = 5;
-        int valor = 5 + ++numero;
-        System.out.println(valor);
+         /* 
+         * int x = 4;
+         * x += 2; // x = x + 2 
+         *  System.out.println(x);
+         */
+     
     }
 }
