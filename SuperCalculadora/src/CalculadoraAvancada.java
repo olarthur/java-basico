@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.Math;
 
 public class CalculadoraAvancada extends JFrame {
 
@@ -44,11 +45,9 @@ public class CalculadoraAvancada extends JFrame {
 
     private void calcular() {
         try {
-            // Lê o valor inserido pelo usuário e converte para double
             double valor = Double.parseDouble(textField.getText());
 
-            // Realiza os cálculos solicitados
-            double restoDivisaoPor2 = valor % 2;
+            int restoDivisaoPor2 = (int) (valor % 2);
             double aoCubo = Math.pow(valor, 3);
             double raizQuadrada = Math.sqrt(valor);
             double raizCubica = Math.cbrt(valor);
