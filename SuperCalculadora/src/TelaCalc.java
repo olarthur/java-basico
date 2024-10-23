@@ -12,25 +12,31 @@ public class TelaCalc extends JFrame {
     public TelaCalc() {
         // Configuração do JFrame
         setTitle("Calculadora Avançada");
-        setSize(400, 300);
+        setSize(400, 180);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
 
+        Font font = new Font("Arial", Font.BOLD, 14);
+
         // Label para o campo de texto
         JLabel label = new JLabel("Digite um número:");
+        label.setFont(font); // Define a fonte para o JLabel
         add(label);
 
         // Campo de texto para inserção do número
         textField = new JTextField(10);
+        textField.setFont(font); // Define a fonte para o JTextField
         add(textField);
 
         // Botão para acionar os cálculos
-        JButton calcularBtn = new JButton("+ - * =");
+        JButton calcularBtn = new JButton("=");
+        calcularBtn.setFont(font); // Define a fonte para o JButton
         add(calcularBtn);
 
         // Área de texto para mostrar os resultados
         resultArea = new JTextArea(5, 30);
         resultArea.setEditable(false); // Impede a edição
+        resultArea.setFont(font); // Define a fonte para o JTextArea
         JScrollPane scrollPane = new JScrollPane(resultArea); // Adiciona barra de rolagem se necessário
         add(scrollPane);
 
@@ -55,7 +61,7 @@ public class TelaCalc extends JFrame {
 
             // Exibe os resultados na área de texto
             resultArea.setText(String.format(
-                "Resto da divisão por 2: %.2f\n" +
+                "Resto da divisão por 2: %d\n" +
                 "Número elevado ao cubo: %.2f\n" +
                 "Raiz quadrada: %.2f\n" +
                 "Raiz cúbica: %.2f\n" +
