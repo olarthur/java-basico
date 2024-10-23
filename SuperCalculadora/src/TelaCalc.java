@@ -4,12 +4,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.Math;
 
-public class CalculadoraAvancada extends JFrame {
+public class TelaCalc extends JFrame {
 
     private JTextField textField;
     private JTextArea resultArea;
 
-    public CalculadoraAvancada() {
+    public TelaCalc() {
         // Configuração do JFrame
         setTitle("Calculadora Avançada");
         setSize(400, 300);
@@ -73,7 +73,7 @@ public class CalculadoraAvancada extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new CalculadoraAvancada().setVisible(true);
+                new TelaCalc().setVisible(true);
             }
         });
     }
