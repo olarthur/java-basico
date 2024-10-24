@@ -3,6 +3,7 @@ package aula4;
 import java.util.Scanner;
 
 public class Aula4 {
+
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
         
@@ -31,10 +32,8 @@ public class Aula4 {
         
         System.out.println("\nObrigado por utilizar nosso sistema!\n");
     }
-}
-
- public static void notas(){
-       Scannner leia = new Scanner(System.in);
+    public static void notas(){
+       Scanner leia = new Scanner(System.in);
        
        float av1, av2, av3, media;
        
@@ -46,8 +45,21 @@ public class Aula4 {
 
        media = valorMedia(av1, av2, av3);
        
+       System.out.printf("A media = %.2f\n", media);
+       
+       int media_menu;
+       media_menu = (int) media;
+       
+       switch(media_menu) {
+           case 10: System.out.println("Parabens, nota MAXIMA!"); break;
+           case 9: System.out.println("Otimo, quase nota MAXIMA!"); break;
+           case 8: System.out.println("Otimo, grande nota"); break;
+           case 7: System.out.println("Muito bem, podemos melhorar."); break;
+           case 6: System.out.println("Aprovado"); break;
+           default: System.out.println("Aluno Reprovado! ");
+       }
 }
-    public static float valorMedia(float nota1, float nota2, float nota3) {
+    public  float valorMedia(float nota1, float nota2, float nota3) {
     
         float valorMedia = 0;
         if (nota1 < nota2 && nota1 < nota3) {
@@ -59,4 +71,7 @@ public class Aula4 {
         else {
             valorMedia = (nota1 + nota2) / 2;
         }
+    }
 }
+    
+   
