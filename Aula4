@@ -1,0 +1,62 @@
+package aula4;
+
+import java.util.Scanner;
+
+public class Aula4 {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        
+        int escolha;
+        
+        do {
+            System.out.printf("\n\n--------------------\n");
+            System.out.println("\t .. Menu de exemplos: ..|\n");
+            System.out.println("\tOpcao 1: Exemplo de notas.\n");
+            System.out.println("\tOpcao 2: Exemplo de notas.\n");
+            System.out.println("\tOpcao 0: Sair do sistema.\n");
+            System.out.println("\nEscolha uma opcao: ");
+            escolha = leia.nextInt();  
+            
+            switch(escolha) {
+                case 1 = notas();
+                break;
+                case 2 = repeticao();
+                break;
+                case 0 = sair();
+                
+                default: System.out.println("Opcao invalida\n"); 
+            }
+            
+        } while (escolha != 0);
+        
+        System.out.println("\nObrigado por utilizar nosso sistema!\n");
+    }
+}
+
+ public static void notas(){
+       Scannner leia = new Scanner(System.in);
+       
+       float av1, av2, av3, media;
+       
+       System.out.println("Informa a nota Av1: ");
+       av1 = leia.nextFloat();
+       System.out.println("Informe a nota Av2: ");
+       av2 = leia.nextFloat();
+       System.out.println("Informe a nota av3: ");
+
+       media = valorMedia(av1, av2, av3);
+       
+}
+    public static float valorMedia(float nota1, float nota2, float nota3) {
+    
+        float valorMedia = 0;
+        if (nota1 < nota2 && nota1 < nota3) {
+            valorMedia = (nota2 + nota3) / 2;
+        } else 
+            if (nota2 < nota1 && nota1 < nota3) {
+                valorMedia = (nota1 + nota3) / 2;
+            }
+        else {
+            valorMedia = (nota1 + nota2) / 2;
+        }
+}
