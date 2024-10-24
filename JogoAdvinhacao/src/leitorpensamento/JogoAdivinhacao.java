@@ -9,7 +9,7 @@ import java.util.Random;
 public class JogoAdivinhacao extends JFrame {
     private JSpinner spinnerNumero; // Campo com scroll de números
     private JLabel lblMensagem;
-    private JButton btnTentar;
+    private JButton btnAdvinhar;
     private int numeroPensado; // Número gerado aleatoriamente
 
     public JogoAdivinhacao() {
@@ -40,12 +40,12 @@ public class JogoAdivinhacao extends JFrame {
         gbc.gridwidth = 1;
         add(spinnerNumero, gbc);
 
-        // Botão "Tentar"
-        btnTentar = new JButton("Tentar");
+        // Botão "Advinhar"
+        btnAdvinhar = new JButton("Advinhar");
         gbc.gridx = 1;
         gbc.gridy = 1;
         gbc.gridwidth = 1;
-        add(btnTentar, gbc);
+        add(btnAdvinhar, gbc);
 
         // Mensagem de feedback
         lblMensagem = new JLabel("");
@@ -55,7 +55,7 @@ public class JogoAdivinhacao extends JFrame {
         add(lblMensagem, gbc);
 
         // Ação do botão
-        btnTentar.addActionListener(new ActionListener() {
+        btnAdvinhar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 verificarNumero();
