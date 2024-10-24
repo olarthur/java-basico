@@ -9,7 +9,7 @@ public class Aula2 {
         Turma turma = new Turma();
         double ra, av1, av2;
 
-        // Gerar dados dos alunos
+        
         for (int i = 0; i < 10; i++) {
             ra = (gerar.nextInt(1000)) + 240000;
             av1 = gerar.nextInt(11);
@@ -17,14 +17,10 @@ public class Aula2 {
             turma.adicionarAluno(new Aluno(ra, av1, av2));
         }      
         
-        // EXIBIR TURMA
         System.out.println("Turma Inicial:");
         turma.exibirTurma();
 
-        // Criar uma instância da classe Av1_alterada e executar
         Av1_alterada av1Alterada = new Av1_alterada(turma);
         av1Alterada.executar();
-
-        leia.close(); // Fecha o Scanner
     }
 }
