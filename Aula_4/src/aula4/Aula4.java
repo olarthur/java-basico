@@ -43,7 +43,9 @@ class GlobalVariaveis{
                 default:    System.out.printf("Opcao invalida\n");
             }
         }while( escolha != 0 );        
-        System.out.printf("\nObrigado por utilizar nosso sistema!\n");       
+        System.out.printf("\nObrigado por utilizar nosso sistema!\n");
+             
+        ler.close(); 
     }
     
     public static void notas(){
@@ -69,7 +71,8 @@ class GlobalVariaveis{
             case 7:     System.out.printf("Muito bem, podemos melhorar");   break;
             case 6:     System.out.printf("Aprovado (raspando.. haha)");    break;
             default:    System.out.printf("Aluno Reprovado! ");             break;       
-        }      
+        }    
+        ler.close();  
     }
     
     public static float valor_Media(float nota1, float nota2, float nota3){

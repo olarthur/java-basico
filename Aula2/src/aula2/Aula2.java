@@ -22,5 +22,6 @@ public class Aula2 {
 
         Av1_alterada av1Alterada = new Av1_alterada(turma);
         av1Alterada.executar();
+        leia.close();
     }
 }

@@ -42,6 +42,7 @@ public  class Av1_alterada {
                 System.out.println("Opção inválida. Tente novamente.");
             }
         }
+        leia.close();
     }
 }
 
