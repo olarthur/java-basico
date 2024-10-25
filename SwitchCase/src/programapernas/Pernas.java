@@ -5,10 +5,10 @@ public class Pernas {
     public static void main(String[] args) throws Exception {
         Scanner leia = new Scanner(System.in);
 
-        System.out.println("Quantas pernas? ");
+        System.out.print("Quantas pernas?  ");
         int pernas = leia.nextInt();
         String tipo;
-        System.out.println("Isso é um(a): ");
+        System.out.print("Isso é um(a): ");
 
         switch (pernas) {
             case 1: 
