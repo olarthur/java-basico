@@ -38,14 +38,14 @@ public class BhaskaraCalculator extends JFrame {
         JPanel panelDeltaFormula = new JPanel();
         lblDeltaFormula = new JLabel("Δ = ");
         lblB = new JLabel("B²");
-        lbl4A = new JLabel(" - 4.");
+        lbl4A = new JLabel(" - 4 *");
         lblA = new JLabel("A");
-        lblC = new JLabel(". C");
+        lblC = new JLabel(" C");
         panelDeltaFormula.add(lblDeltaFormula);
         panelDeltaFormula.add(lblB);
         panelDeltaFormula.add(lbl4A);
         panelDeltaFormula.add(lblA);
-        panelDeltaFormula.add(new JLabel("."));
+        panelDeltaFormula.add(new JLabel("*"));
         panelDeltaFormula.add(lblC);
         add(panelDeltaFormula);
 
