@@ -17,6 +17,9 @@ public class Pernas {
             case 2: 
             tipo = "Bípede";
             break;
+            case 3: 
+            tipo = "Tripé";
+            break;
             case 4: 
             tipo = "Quadrúpede";
             break;
@@ -28,5 +31,6 @@ public class Pernas {
         }
         System.out.println(tipo);
 
+        leia.close();
     }
 }
