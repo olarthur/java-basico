@@ -10,7 +10,6 @@ class GlobalVariaveis{
         for(int i=0; i<10; i++){
             for( int j=0; j<5; j++){
                 quina[i][j] = Aula4.num_sorteio();
-                //System.out.printf("%02d - ", GlobalVariaveis.quina[i][j]);
             }
             Arrays.sort(quina[i]);
         }   
@@ -113,11 +112,7 @@ class GlobalVariaveis{
     }
     
     public static void repeticao(){
-        /*
-            Do While(??)    // REPITA
-            While(??)       // ENQUANTO 
-            For(???)        // PARA 
-        */
+
         int x = 1;
         do{
             System.out.println("do while() " + x);
@@ -151,17 +146,5 @@ class GlobalVariaveis{
         
         GlobalVariaveis.realizarQuina();
         listar_sorteio();     
-        
-        /*int i;
-        int bingo[] = new int[5];
-        
-        System.out.print("\nSorteio do bingo (ultimo sorteio):\n");
-        
-        for( i=0; i<5; i++){
-            bingo[i] = GlobalVariaveis.quina[9][i];
-            System.out.print("Numero gerado (" + (i+1) + "): " + bingo[i] + "\n");
-        }
-        */
-        
     }
 }
