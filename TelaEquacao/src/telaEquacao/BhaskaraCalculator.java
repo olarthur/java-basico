@@ -57,21 +57,25 @@ public class BhaskaraCalculator extends JFrame {
 
         // Painel para Resultado de Delta
         JPanel panelDeltaResult = new JPanel();
-        lblDeltaValue = new JLabel("Δ = ");
+        lblDeltaValue = new JLabel("Δ = "); // Inicialmente vazio
+        lblDeltaValue.setVisible(false); // Oculta o rótulo inicialmente
         panelDeltaResult.add(lblDeltaValue);
         add(panelDeltaResult);
 
         // Painel para Resultados de X1 e X2
         JPanel panelResults = new JPanel();
-        lblX1 = new JLabel("x1 = ");
-        lblX2 = new JLabel("x2 = ");
+        lblX1 = new JLabel("x1 = ---"); // Inicialmente vazio
+        lblX1.setVisible(false); // Oculta o rótulo inicialmente
+        lblX2 = new JLabel("x2 = ---"); // Inicialmente vazio
+        lblX2.setVisible(false); // Oculta o rótulo inicialmente
         panelResults.add(lblX1);
         panelResults.add(lblX2);
         add(panelResults);
 
         // Painel para Tipo de Raízes
         JPanel panelType = new JPanel();
-        lblType = new JLabel("Tipo: ");
+        lblType = new JLabel("Tipo: "); // Inicialmente vazio
+        lblType.setVisible(false); // Oculta o rótulo inicialmente
         panelType.add(lblType);
         add(panelType);
 
@@ -111,11 +115,15 @@ public class BhaskaraCalculator extends JFrame {
 
         int delta = b * b - 4 * a * c;
         lblDeltaValue.setText("Δ = " + delta);
+        lblDeltaValue.setVisible(true); // Torna visível o rótulo de Δ
 
         if (delta < 0) {
-            lblX1.setText("x1 = ---");
-            lblX2.setText("x2 = ---");
+            lblX1.setText("x1 = ");
+            lblX2.setText("x2 = ");
             lblType.setText("Tipo: Sem raízes reais");
+            lblX1.setVisible(true); // Torna visível o rótulo de x1
+            lblX2.setVisible(true); // Torna visível o rótulo de x2
+            lblType.setVisible(true); // Torna visível o rótulo do tipo
         } else {
             double x1 = (-b + Math.sqrt(delta)) / (2.0 * a);
             double x2 = (-b - Math.sqrt(delta)) / (2.0 * a);
@@ -123,6 +131,9 @@ public class BhaskaraCalculator extends JFrame {
             lblX1.setText(String.format("x1 = %.2f", x1));
             lblX2.setText(String.format("x2 = %.2f", x2));
             lblType.setText("Tipo: Raízes Reais");
+            lblX1.setVisible(true); // Torna visível o rótulo de x1
+            lblX2.setVisible(true); // Torna visível o rótulo de x2
+            lblType.setVisible(true); // Torna visível o rótulo do tipo
         }
     }
 
