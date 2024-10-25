@@ -99,9 +99,16 @@ public class CalcularIdade extends JFrame {
             txtIdade.setText(Integer.toString(idade));
 
             // Define a situação do voto com base na idade
-            String situacao = (idade >= 16 && idade < 18) || (idade > 70) ? "O voto é Opcional" : "O voto é Obrigatório";
-            
-            txtSituacao.setText(situacao); // Atualiza o campo de situação
+            String situacao;
+            if ( idade < 16 ) {
+                txtSituacao.setText("Não Vota");
+            } else {
+                if ((idade >= 16 && idade < 18) || (idade > 70)) {
+                    txtSituacao.setText("Voto Opicional");
+                } else {
+                    txtSituacao.setText("Voto Obrigatório");
+                }
+            }
 
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(this, "Por favor, insira um ano válido.", "Erro", JOptionPane.ERROR_MESSAGE);
