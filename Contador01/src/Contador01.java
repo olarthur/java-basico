@@ -3,13 +3,18 @@ public class Contador01 {
 
         int cc = 0;
         while(cc < 10) {
-            
+
             cc++;
-            if (cc == 5 || cc == 7){
+            
+            if (cc == 2 || cc == 3 || cc == 4){
                 continue;
             }
+
+            if (cc == 7) {
+                break;
+            }
+
             System.out.println("Spin " + cc);
-            
         }
     }
 }
