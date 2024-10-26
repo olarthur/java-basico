@@ -20,11 +20,6 @@ public class ContagemApp extends JFrame {
         lblContagem.setFont(new Font("Serif", Font.BOLD, 20));
         add(lblContagem);
 
-        // Campo de texto para o usuário inserir o número
-        txtNumero = new JTextField(5);
-        txtNumero.setFont(new Font("Serif", Font.BOLD, 20));
-        add(txtNumero);
-
         // Botão de contar
         btnContar = new JButton("Contar");
         btnContar.setPreferredSize(new Dimension(100, 40));
