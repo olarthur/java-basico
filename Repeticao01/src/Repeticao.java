@@ -3,7 +3,7 @@ public class Repeticao {
 
         int cc = 0;
         do {
-            System.out.println("Spin");
+            System.out.println("Spin " + cc);
             cc++;
         } while(cc < 4);
     }
