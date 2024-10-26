@@ -6,7 +6,6 @@ import java.awt.*;
 public class ContagemApp extends JFrame {
 
     private JLabel lblContagem;
-    private JTextField txtNumero;
     private JButton btnContar;
 
     public ContagemApp() {
