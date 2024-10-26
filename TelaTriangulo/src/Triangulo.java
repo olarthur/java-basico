@@ -102,10 +102,10 @@ public class Triangulo extends JFrame {
             lblForma.setText("Forma um Triângulo");
             if (a == b && b == c) {
                 lblTipo.setText("Equilátero");
-            } else if (a == b || b == c || a == c) {
-                lblTipo.setText("Isósceles");
-            } else {
+            } else if (a != b && b != c && a != c) {
                 lblTipo.setText("Escaleno");
+            } else {
+                lblTipo.setText("Isósceles");
             }
         } else {
             lblForma.setText("Não forma um Triângulo");
