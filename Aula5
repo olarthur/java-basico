@@ -34,12 +34,10 @@ public class Aluno {
     private double notaAv2;
     
     
-    public void cpf() {
-        this.cpf = cpf;
-    }
-    
-    public void nome() {
+    public Aluno(String nome, String cpf) {
         this.nome = nome;
+        this.cpf = "000.000.000-00";
+        
     }
 
     public String getNome() {
