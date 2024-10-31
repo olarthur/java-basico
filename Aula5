@@ -24,7 +24,7 @@ Aluno
 
 package aula5;
 
-public class Aluno {
+public class Aluno implements Aula{
     private String nome;
     private int idade;
     private String ra;
@@ -95,4 +95,20 @@ public class Aluno {
     public void setNotaAv2(double notaAv2) {
         this.notaAv2 = notaAv2;
     }
+
+    @Override
+    public void av1() {
+        
+    }
+
+    @Override
+    public void av2() {
+        
+    }
+
+    @Override
+    public void entradaCatraca() {
+        
+    }
 }
+
