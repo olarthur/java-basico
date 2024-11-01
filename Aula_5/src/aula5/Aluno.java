@@ -73,17 +73,24 @@ public class Aluno implements Aula{
     }
 
     @Override
-    public void av1() {
-        
+    public void av1((double a) {
+        this.notaAv1 = a;
     }
 
     @Override
-    public void av2() {
-        
+    public void av2((double a) {
+        this.notaAv2 = a;
     }
 
     @Override
     public void entradaCatraca() {
         
+    }
+
+    public void exibirNotas() {
+        System.out.println("Notas do aluno: " + this.getNome());
+        System.out.println("Nota Av1 = " + this.notaAv1);
+        System.out.println("Nota Av2 = " + this.notaAv2);
+
     }
 }
