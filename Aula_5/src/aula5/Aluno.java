@@ -74,12 +74,28 @@ public class Aluno implements Aula{
 
     @Override
     public void av1((double a) {
-        this.notaAv1 = a;
+        if (a >= 0 && a <= 10.0) {
+           this.notaAv1 = a;
+        } else {
+            this.notaAv1 = 0;
+        }
+        
+        if (a >= 5.6 && a <= 5.9) {
+            this.notaAv1 = 6.0;
+        }
     }
 
     @Override
     public void av2((double a) {
-        this.notaAv2 = a;
+        if (a >= 0 && a <= 10.0) {
+           this.notaAv2 = a;
+        } else {
+            this.notaAv2 = 0;
+        }
+    
+        if (a >= 5.6 && a <= 5.9) {
+            this.notaAv2 = 6.0;
+        }
     }
 
     @Override
